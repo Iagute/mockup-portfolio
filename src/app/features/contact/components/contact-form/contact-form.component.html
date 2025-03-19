@@ -1,0 +1,55 @@
+<div>
+    <div class="form__map">
+        @if (isLoading) {
+            <shared-loading-spinner 
+                class="spinner"
+            />
+        } 
+
+        <iframe 
+            class="contact__iframe"
+            frameBorder="0" 
+            scrolling="no"
+            marginHeight="0" 
+            marginWidth="0" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            (load)="onLoadMap()"
+            src="https://www.google.com/maps/embed?pb=!4v1741184934401!6m8!1m7!1snHFZEE03Cw1nJhVUmN_M_Q!2m2!1d-34.67833880165236!2d-58.71383412310239!3f11.913820323825007!4f-13.003020459067145!5f0.7820865974627469">
+        </iframe>
+    </div>
+
+    <header class="form__header">
+        <h3 class="contact__subtitle">¿Cómo Puedo <span class="title__color">Ayudarte ?</span></h3>
+    </header>
+
+    <form class="contact__form--box">
+        <div class="form__container">
+            <section class="form__left">
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Nombre" name="name" required />
+                    <label for="name" class="form__label">Nombre</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email" name="email" required />
+                    <label for="email" class="form__label">Email</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Asunto" name="subject" required />
+                    <label for="subject" class="form__label">Asunto</label>
+                </div>
+            </section>
+
+            <section class="form__right">
+                <div class="form__group form__group--textarea">
+                    <textarea class="form__input form__input--textarea" placeholder="Mensaje" name="message" required></textarea>
+                    <label for="message" class="form__label">Mensaje</label>
+                </div>
+            </section>
+        </div>
+
+        <input type="submit" class="form__button" value="Enviar Mensaje">
+    </form>
+</div>

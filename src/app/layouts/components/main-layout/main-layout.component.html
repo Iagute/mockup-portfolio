@@ -1,0 +1,86 @@
+<div class="layout">
+
+    <!-- Información Personal -->
+    <aside class="layout__aside" [ngClass]="{ 'is-active': toggleMenu }">
+        
+        <div class="aside__user-info">
+            <!--  Información general  -->
+            <div class="user-info__general">
+                <div class="user-info__container-image">
+                    <img src="/img/default-user.jpg" class="user-info__image" alt="User">
+                </div>
+
+                <h2 class="user-info__name">Ian Tello</h2>
+                <h4 class="user-info__job">Desarrollador Web</h4>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="layout__menu">
+                <ul class="menu__list">
+                    <li class="menu__option" *ngFor="let item of menuOptions">
+                        <a 
+                            [routerLink]="item.route" 
+                            routerLinkActive="active"
+                            class="menu__link"
+                        >
+                            <i [ngClass]="['menu__icon', item.icon]"></i>
+                            <span 
+                                routerLinkActive="menu__overlay-active" 
+                                class="menu__overlay"
+                            > 
+                                {{item.name}} 
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Links o redes sociales -->
+            <div class="user-info__links">
+                <ul class="links__social">
+                    <li class="social__option">
+                        <a class="social__link" href="#">
+                            <i class="social__icon fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social__option">
+                        <a class="social__link" href="#">
+                            <i class="social__icon fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social__option">
+                        <a class="social__link" href="#">
+                            <i class="social__icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón -->
+            <div class="user-info__buttons">
+                <button class="user-info__btn">
+                    Descargar CV
+                </button>
+            </div>
+
+            <!-- Pie de página -->
+            <footer class="user-info__footer">
+                &copy; 2024 Ian Tello
+            </footer>
+        </div>
+    </aside>
+
+    <!-- Menú Responsive -->
+    <div (click)="onToggle()" class="layout__menu-toggle">
+        <i class="menu-toggle__icon fa-solid" [ngClass]="toggleMenu ? 'fa-xmark' : 'fa-bars'"></i>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="layout__content">
+
+        <section class="content__page"> 
+            <router-outlet></router-outlet>
+        </section>
+
+    </main>
+    
+
+</div>

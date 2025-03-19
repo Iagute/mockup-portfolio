@@ -1,0 +1,15 @@
+<section class="about__clients">
+    <header class="clients__header">
+        <h2 class="clients__title">Clientes</h2>
+    </header>
+
+    <div class="clients__container">
+        @for (item of clientItem; track $index) {
+            <div class="clients__client">
+                <a href="#" class="clients__logo">
+                    <img [src]="item.img" class="clients__image" alt="client">
+                </a>
+            </div>
+        }
+    </div>
+</section>

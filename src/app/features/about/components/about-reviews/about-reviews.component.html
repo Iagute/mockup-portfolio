@@ -1,0 +1,30 @@
+<section class="about__reviews">
+    <header class="reviews__header">
+        <h2 class="reviews__title">Reseñas</h2>
+    </header>
+
+    <div class="reviews__container">
+        @for (item of reviewItem; track $index) {
+            <div class="reviews__review">
+                <div class="review__img">
+                    <img class="img__image" [src]="item.img" alt="reviewer">
+                </div>
+    
+                <div class="review__description">
+                    <p class="review__text">{{ item.text }}</p>
+                </div>
+    
+                <div class="review__autor">
+                    <div class="review__autor-info">
+                        <h3 class="autor__name"> {{ item.name }} </h3>
+                        <h4 class="review__company"> {{ item.company }} </h4>
+                    </div>
+                    
+                    <div class="review__autor-icon">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>

@@ -1,0 +1,31 @@
+.about__personal-info {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personal-info__bio {
+    flex-basis: 56%;
+}
+
+.personal-info__desciption {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.personal-info__data {
+    flex-basis: 44%;
+    padding: 0 1.5rem;
+}
+
+.data__option {
+    margin-bottom: 1rem;
+}
+
+.data__title {
+    margin-right: 0.5rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+}

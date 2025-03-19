@@ -37,7 +37,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/reset.css",
+              "src/css/styles.css",
+              "src/css/responsive.css"
             ],
             "scripts": []
           },

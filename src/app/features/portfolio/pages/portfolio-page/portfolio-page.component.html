@@ -1,0 +1,27 @@
+<div class="content__portfolio">
+    <header class="portfolio__header">
+        <h1 class="portfolio__title">Portafolio</h1>
+    </header>
+
+    <nav class="portfolio__navbar">
+        <ul class="portfolio__list">
+            @for (item of linkOptions; track $index) {
+                <li 
+                    class="portfolio__option"
+                    [class.portfolio__option--active]="selectedCategory === item"
+                >
+                    <a class="portfolio__link" (click)="filterByCategory(item)">{{item}}</a>
+                </li>
+            }
+        </ul>
+    </nav>
+
+    <section class="portfolio__gallery">
+        @for (item of filteredGalleryItems; track $index) {
+            <portfolio-gallery-item
+                class="gallery__item"
+                [item]="item"
+            />
+        }
+    </section>
+</div>

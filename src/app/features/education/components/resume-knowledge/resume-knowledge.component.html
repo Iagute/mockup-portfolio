@@ -1,0 +1,11 @@
+<header class="resume__subheader">
+    <h2 class="resume__subtitle">Áreas de conocimiento</h2>
+</header>
+
+<div class="resume__knowledges">
+    <ul class="knowledges__list">
+        @for (item of knowledgeItems; track $index) {
+            <li class="knowledges__option">{{item.title}}</li>
+        }
+    </ul>
+</div>

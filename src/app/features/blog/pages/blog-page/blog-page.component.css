@@ -1,0 +1,42 @@
+/* CHROME */
+.content__blog::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+
+.content__blog::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    border-radius: 40px;
+    
+    box-shadow: none;
+}
+
+.content__blog:hover::-webkit-scrollbar-thumb {
+    border: 10px solid var(--color-subtitle);
+}
+
+.content__blog:hover::-webkit-scrollbar-thumb:hover {
+    border: 10px solid var(--color-secondary);
+}
+
+.content__blog:hover::-webkit-scrollbar-track {
+    margin: 30px;
+}
+
+/* BLOG */
+
+.blog__articles {    
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 2.5rem;
+}
+
+.articles__article {
+    flex-basis: 50%;
+    padding: 0px 1.5rem;
+    padding-bottom: 3.5rem;
+}
+
+
+

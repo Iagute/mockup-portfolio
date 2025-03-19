@@ -1,0 +1,19 @@
+<header class="resume__subheader">
+    <h2 class="resume__subtitle">Certificados</h2>
+</header>
+
+<section class="certificates__container">
+    @for (item of certificateItems; track $index) {
+        <article class="certificates__item">
+            <div class="certificate__logo">
+                <img [src]="item.img" class="certificate__image">
+            </div>
+    
+            <div class="certificate__content">
+                <h4 class="certificate__title">{{item.title}}</h4>
+                <span class="certificate__id">ID Verificación: {{item.id}} </span>
+                <span class="certificate__date">{{item.date}}</span>
+            </div>
+        </article>
+    }
+</section>  

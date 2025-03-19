@@ -1,0 +1,89 @@
+.resume__timelines{
+    margin-bottom: 5rem;
+}
+
+.timelines__timeline {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.timeline__header {
+    flex-basis: 30%;
+    text-align: right;
+    
+    padding-right: 2.5rem;
+} 
+
+.timeline__year {
+    margin: 0.3rem 0;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+}
+
+.timeline__company {
+    display: block;
+
+    font-size: 1.3rem;
+    font-weight: lighter;
+
+    color: var(--color-company);
+}
+
+.timeline__divider {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    bottom: -15px;
+
+    width: 1px;
+    background-color: var(--color-company);
+}
+
+.timeline__divider::before {
+    content: "";
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -0.8rem;
+
+    width: 1.7rem;
+    height: 1.7rem;
+
+    background-color: var(--color-secondary);
+    border-radius: 10rem;
+
+    opacity: 0.25;
+}
+
+.timeline__divider::after {
+    content: "";
+    position: absolute;
+    margin-top: 0.7rem;
+    margin-left: -0.4rem;
+
+    width: 0.9rem;
+    height: 0.9rem;
+
+    background-color: var(--color-principal);
+    border: 2px solid var(--color-secondary);
+    border-radius: 10rem;
+    opacity: 1;
+}
+ 
+.timeline__description {
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+}
+
+.timeline__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline__text {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}

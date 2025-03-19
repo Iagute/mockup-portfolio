@@ -1,0 +1,43 @@
+
+.content__about {
+    overflow: auto;  /* Agrega scroll solo si el contenido es muy alto */
+    display:  block;
+
+    padding: 6rem;
+    padding-top: 2rem;
+    padding-right: 3rem;
+
+    height: 80vh;
+    min-height: 100%;
+}
+
+/* CHROME */
+.content__about::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+
+.content__about::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    border-radius: 40px;
+    
+    box-shadow: none;
+}
+
+.content__about:hover::-webkit-scrollbar-thumb {
+    border: 10px solid var(--color-subtitle);
+}
+
+.content__about:hover::-webkit-scrollbar-thumb:hover {
+    border: 10px solid var(--color-secondary);
+}
+
+.content__about:hover::-webkit-scrollbar-track {
+    margin: 30px;
+}
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<header class="resume__subheader">
+    <h2 class="resume__subtitle">Habilidades de <span class="title__color">diseño</span></h2>
+</header>
+
+<div class="resume__skills">
+    @for (item of designItems; track $index) {
+        <article class="skills_title">
+            <h4 class="skills_text">{{ item.text }}</h4>
+            <span class="skills_number">{{ item.number }}</span>
+        </article>
+    
+        <div class="skills_progressbar">
+            <div class="skills__percentage" [ngStyle]="{ 'width': item.number}"></div>
+        </div>
+    }
+</div>
+
+<header class="resume__subheader">
+    <h2 class="resume__subtitle">Habilidades de <span class="title__color">código</span></h2>
+</header>
+
+<div class="resume__skills">
+    @for (item of codeItems; track $index) {
+        <article class="skills_title">
+            <h4 class="skills_text">{{ item.text }}</h4>
+            <span class="skills_number">{{ item.number }}</span>
+        </article>
+    
+        <div class="skills_progressbar">
+            <div class="skills__percentage" [ngStyle]="{ 'width': item.number}"></div>
+        </div>
+    }
+</div>

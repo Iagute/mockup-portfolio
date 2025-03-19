@@ -1,0 +1,21 @@
+<div class="articles__article">
+    <div class="article__top">
+        <div class="article__category">{{item.category}}</div>
+        <a href="#" class="article__image-link">
+            <div class="article__mask">
+                <img [src]="item.img" class="article__image" alt="article">
+            </div>
+
+            <div class="article__logo">
+                <i class="article__icon fa-solid " [ngClass]="item.icon"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="article__bottom">
+        <time datetime="2024-08-30" class="article__date">{{item.date}}</time>
+        <a href="#" class="article__link">
+            <h2 class="article__title">{{item.title}}</h2>
+        </a>
+    </div>
+</div>

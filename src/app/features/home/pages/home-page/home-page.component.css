@@ -1,0 +1,15 @@
+.content__home {
+    display: block;
+    justify-items: center;
+}
+
+.home__name {
+    font-size: 75px ;
+    margin-bottom: 14px;
+
+    color: var(--color-title);
+}
+
+.home__job {
+    color: var(--color-subtitle);
+}

@@ -1,0 +1,19 @@
+<figure class="gallery__container">
+    <div class="gallery__container-image">
+        <a href="#" class="gallery__link">
+            <img [src]="item.image" class="gallery__image">
+        </a>
+    </div>
+
+    <figcaption class="gallery__title"> {{ item.title }} </figcaption>
+    <i class="gallery__icon fa-solid" [ngClass]="item.icon"></i>
+    <span class="gallery__category">
+        @for (cat of item.category; track $index) {
+            {{ cat }} 
+            
+            @if ($index < item.category.length - 1) {
+                |
+            }
+        }
+    </span>
+</figure>

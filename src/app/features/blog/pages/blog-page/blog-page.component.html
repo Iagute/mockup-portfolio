@@ -1,0 +1,11 @@
+<div class="content__blog">
+    <header class="blog__header">
+        <h1 class="blog__title">Blog</h1>
+    </header>
+
+    <section class="blog__articles">
+        @for (item of articleItems; track $index) {
+            <blog-article class="articles__article" [item]="item"  />
+        }
+    </section>
+</div>

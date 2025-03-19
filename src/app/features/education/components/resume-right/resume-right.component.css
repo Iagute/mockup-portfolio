@@ -1,0 +1,39 @@
+.resume__skills {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.skills_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills_text {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.skills_number{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitle);
+}
+
+.skills_progressbar {
+    height: 1rem;
+    margin-bottom: 1.5rem;
+
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-principal);
+    border-radius: 1rem;
+}
+
+.skills__percentage {
+    height: 0.8rem;
+
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-principal);
+    border-radius: 1rem;
+}

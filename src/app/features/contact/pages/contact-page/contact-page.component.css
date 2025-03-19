@@ -1,0 +1,39 @@
+/* CHROME */
+.content__contact::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+
+.content__contact::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    border-radius: 40px;
+    
+    box-shadow: none;
+}
+
+.content__contact:hover::-webkit-scrollbar-thumb {
+    border: 10px solid var(--color-subtitle);
+}
+
+.content__contact:hover::-webkit-scrollbar-thumb:hover {
+    border: 10px solid var(--color-secondary);
+}
+
+.content__contact:hover::-webkit-scrollbar-track {
+    margin: 30px;
+}
+
+/* Contact */
+.contact__container {
+    display: flex;
+}
+
+.contact__info {
+    flex-basis: 33%;
+}
+
+.contact__form {
+    flex-basis: 66%;
+
+    padding: 0 1.5rem;
+}

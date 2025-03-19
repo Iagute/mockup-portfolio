@@ -1,0 +1,45 @@
+<header class="resume__subheader">
+    <h2 class="resume__subtitle">Formación</h2>
+</header>
+
+<div class="resume__timelines">
+    @for (item of timelineItems; track $index) {
+        <article class="timelines__timeline">
+            <header class="timeline__header">
+                <h4 class="timeline__year">{{ item.year }}</h4>
+                <span class="timeline__company"> {{item.company}} </span>
+            </header>
+    
+            <div class="timeline__divider"></div>
+    
+            <div class="timeline__description">
+                <h3 class="timeline__title">{{ item.title }}</h3>
+    
+                <p class="timeline__text"> {{ item.text }} </p>
+            </div>
+        </article>
+    }
+</div>
+
+<header class="resume__subheader">
+    <h2 class="resume__subtitle">Experiencia</h2>
+</header>
+
+<div class="resume__timelines">
+    @for (item of timelineExperience; track $index) {
+        <article class="timelines__timeline">
+            <header class="timeline__header">
+                <h4 class="timeline__year">{{ item.year }}</h4>
+                <span class="timeline__company"> {{item.company}} </span>
+            </header>
+    
+            <div class="timeline__divider"></div>
+    
+            <div class="timeline__description">
+                <h3 class="timeline__title">{{ item.title }}</h3>
+    
+                <p class="timeline__text"> {{ item.text }} </p>
+            </div>
+        </article>
+    }
+</div>

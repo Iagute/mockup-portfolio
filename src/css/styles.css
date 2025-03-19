@@ -1,0 +1,140 @@
+:root {
+    --color-principal: #FFFFFF;
+    --color-secondary: #04b4e0;
+
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-title: #222222;
+    --color-subtitle: #888;
+    --color-text: #555;
+
+    --color-border: #E5e6e7;
+    --color-company: #A5A6A7;
+
+    --color-background-certificate: #f5f5f5
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+    color: var(--color-text);
+    background-color: var(--color-background);
+
+    overflow: hidden;
+}
+
+body {
+    background-image: url("/img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -120px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-title);
+}
+
+.title__color {
+    color: var(--color-secondary);
+} 
+
+/* CONTENIDO GENERAL */
+.content__about,
+.content__resume,
+.content__portfolio,
+.content__blog,
+.content__contact {
+    overflow: auto;  /* Agrega scroll solo si el contenido es muy alto */
+    display:  block;
+
+    padding: 6rem;
+    padding-top: 2rem;
+    padding-right: 3rem;
+
+    height: 80vh;
+    min-height: 100%;
+}
+
+/* GENERAL headers */
+.about__header,
+.resume__header,
+.portfolio__header,
+.blog__header,
+.contact__title {
+    display: inline-block;
+    margin-bottom: 4.5rem;
+}
+
+.about__title,
+.resume__title,
+.portfolio__title,
+.blog__title,
+.contact__title {
+    position: relative;
+    font-size   : 3.2rem;
+}
+
+/* COMPARTIDOS */
+.about__services,
+.about__reviews,
+.about__clients,
+.about__prices,
+.about__extra {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.services__header,
+.reviews__header,
+.clients__header,
+.prices__header,
+.extra__header,
+.resume__header,
+.contact__header
+.resume__subheader {
+    position: relative;
+    display: inline-block;
+ 
+    padding-right: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+
+
+/* SCROLLBARS */
+.content__portfolio::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+
+.content__portfolio::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    border-radius: 40px;
+    
+    box-shadow: none;
+}
+
+.content__portfolio:hover::-webkit-scrollbar-thumb {
+    border: 10px solid var(--color-subtitle);
+}
+
+.content__portfolio:hover::-webkit-scrollbar-thumb:hover {
+    border: 10px solid var(--color-secondary);
+}
+
+.content__portfolio:hover::-webkit-scrollbar-track {
+    margin: 30px;
+}
+
+
+
+    
